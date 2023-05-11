@@ -1,0 +1,32 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        --white: #fff;
+        --black: #000;
+        --main-color: pink;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--black);
+        background-color: var(--white);
+        /* border: 2px solid red; */
+    }
+
+    body.active {
+        --white: #000;
+        --black: #fff;
+        --main-color: green;
+        transition: background 1s;
+    }
+
+    /* header */
+
+    header {
+        border: 2px solid red;
+    }
