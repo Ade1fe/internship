@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizens Reporting Website</title>
+  <!-- Add your CSS stylesheets and external libraries here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Add your website content here -->
+  <header>
+    <h1>Welcome to Citizens Reporting Website</h1>
+    <!-- Add navigation menu if needed -->
+  </header>
+  
+  <main>
+    <h2>Report an Issue</h2>
+    <form action="report.php" method="POST">
+      <!-- Add form fields for incident details -->
+      <label for="incidentType">Incident Type:</label>
+      <select id="incidentType" name="incidentType">
+        <option value="pothole">Pothole</option>
+        <option value="graffiti">Graffiti</option>
+        <!-- Add more incident types as needed -->
+      </select>
+      
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+      
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+      
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo">
+      
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Citizens Reporting Website. All rights reserved.</p>
+  </footer>
+  
+  <!-- Add your JavaScript scripts and libraries here -->
+  <script src="script.js"></script>
+</body>
+</html>
